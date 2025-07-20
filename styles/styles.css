@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+.btn-primary{
+  background-color: #E02C6D;
+  color: white;
+  padding: 15px 38px;
+  border:none;
+  border-radius: 25px;
+  font-weight: 700;
+}
+.arrow-icon {
+  margin-top: ;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.navbar {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* এখানে item গুলোর মাঝে ফাঁকা তৈরি হবে */
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links i {
+  cursor: pointer;
+  font-size: 18px;
+}
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 120px;
+}
+.banner-title{
+  width: 582px;
+  height: 133px;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.banner-description{
+  width: 505px;
+  height: 63px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.banner-img{
+  width: 400px;
+  height: 414px;
+  background-image: url(../images/Circle\ design.svg);
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  padding: 50px 165px; /* উপরে নিচে 50px, পাশে 165px করে */
+  gap: 35px
+}
+.products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.products-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.card {
+  width: 329px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-image {
+  width: 300px;
+  height: 256px;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto 0 auto; /* Center horizontally */
+  border-radius: 6px;
+}
+
+.card-body {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 6px;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.rating {
+  font-size: 14px;
+  color: #ff9900;
+}
+
+.description {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+.gear{
+  width: 1110px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 200px 150px;
+  gap: 70px;
+}
+.gear-img{
+  width: 404px;
+  height: 270px;
+}
+.gear-heading{
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+.gear-description{
+  width: 501px;
+  height: 88px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.gear-title .btn-primary{
+  border-radius: 0px;
+}
+footer {
+  width: 100%;
+  height: 239px;
+  background-color: #0A0826;
+  color: white;
+  text-align: center;
+  padding-top: 60px; /* নিচে নামানোর জন্য */
+}
+.footer-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+.f-des{
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.icons{
+  display: inline-flex;
+  gap: 20px;
+}
+@media screen and (max-width: 600px) {
+
+  /* 🧭 Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  /* 📸 Banner (Hero section) - ছবি আগে */
+  .banner {
+    flex-direction: column-reverse; /* image first, then text */
+    margin: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .banner-title {
+    width: 100%;
+    font-size: 1.8rem;
+    height: auto;
+  }
+
+  .banner-description {
+    width: 100%;
+    height: auto;
+    font-size: 0.95rem;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* 🏷 Logo section - ৪ টা উপরে, ৩ টা নিচে */
+  .logo {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 80px; /* ছোট করে যেন ভালো ফিট হয় */
+  }
+
+  /* 🛒 Product Cards - এক কলাম */
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-image,
+  .card-body {
+    width: 100%;
+  }
+
+  /* ⚙ Gear section - লেখাগুলো আগে, তারপর ছবি */
+  .gear {
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 20px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .gear-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gear-title {
+    order: -1; /* লেখাগুলো আগে আনলো */
+  }
+
+  .gear-heading {
+    font-size: 1.6rem;
+  }
+
+  .gear-description {
+    width: 100%;
+    height: auto;
+    font-size: 0.95rem;
+  }
+
+  /* 🦶 Footer */
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .f-des {
+    font-size: 0.8rem;
+  }
+
+  .icons {
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    height: auto;
+    padding: 40px 20px;
+  }
+}
